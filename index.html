@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Information</h1>
+        <form>
+            <div class="myForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="domain">Domain Name</label>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <button type="submit" class="js-send-action">Submit</button>
+         </form>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+        </style>
+    </div>
+</body>
+</html>
+
+
+<script>
+  document.getElementById('myForm').onsubmit = function() {
+    const name = document.getElementById('name').value;
+    const domain = document.getElementById('domain').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('phone').value;
+
+    // Here you can do something with the form data, like validation or submission
+    console.log(name, age, email);
+
+    // Return false to prevent the form from actually submitting
+    return false;
+  };
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/connect.js"></script>
+<script type="text/javascript" src="js/main1.js"></script>
+
+</body>
+</html>
